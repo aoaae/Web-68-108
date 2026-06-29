@@ -7,14 +7,24 @@
     <title>Web Workshop : 384244066</title>
 
     <style>
+        html {
+            scroll-behavior: smooth; /* เลื่อนหน้าจอแบบนุ่มนวล */
+        }
+
         body {
             font-family:Verdana, Geneva, Tahoma, sans-serif;
-            margin: 20px;
+            margin: 50px;
             padding: 0 ;
+            background-color: #f9ffdd;
+            
+            line-height: 1.5;
+   
         }
 
         h1 {
             color: #d01cd6;
+
+            /*text-align: center;*/
         }
 
         h2 {
@@ -26,16 +36,32 @@
         }
 
         pre {
-            background-color: rgb(243, 216, 98);
+            background-color: rgb(255, 255, 255);
             border-left: 5px solid rgb(201, 3, 208);
             padding-top: 10px;
             font-size: 16px;
+
+            white-space: pre-wrap;
+            border-radius: 10px;
         }
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #f00;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
     </style>
 
 </head>
 <body>
-    <h1>HTML tutorial</h1>
+    <h1 id="top">HTML tutorial</h1>
     <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
     <h2>Topics</h2>
     <ul>
@@ -70,52 +96,57 @@ content of web pages
     - HTML is not a programming language, but a markup language
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- HTML Document Structure -->
     <h2 id="Structure">HTML Document Structure</h2>
+    <p>An HTML document has the following basic structure...</p>
     <pre>
- ค าอธิบาย: 
-        &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5 
-        &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด 
-        &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ 
-        &lt;body&gt;: ส่วนที่จะแสดงผลบนหน้าเว็บ 
-        องค์ประกอบส าคัญของ HTML 
-        แท็ก (Tags): 
-         - แท็กเริ่มต้น (Opening Tag): เช่น &lt;h1&gt; 
-         - แท็กปิด (Closing Tag): เช่น &lt;/h1&gt; 
-        แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก 
-         - ใช้เพื่อก าหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height 
-       
-        ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt; 
-                &lt;img src="image.jpg" alt="A description of the image"&gt; 
+        คำอธิบาย:
+        &lt;!DOCTYPE html&gt;: ระบุว่าเป็นเอกสาร HTML5
+        &lt;html&gt;: เป็นรากของเอกสาร HTML ทั้งหมด
+        &lt;head&gt;: ส่วนที่ใช้เก็บข้อมูลเมตา เช่น &lt;title&gt; ชื่อหน้าเว็บ
+        &lt;body&gt;: ส่วนที่จะแสดงผลบนหน้าเว็บ
+        องค์ประกอบสำคัญของ HTML
+        แท็ก (Tags):
+         - แท็กเริ่มต้น (Opening Tag): เช่น &lt;h1&gt;
+         - แท็กปิด (Closing Tag): เช่น &lt;/h1&gt;
+        แอตทริบิวต์ (Attributes): คุณสมบัติของแท็ก
+         - ใช้เพื่อกำหนดคุณสมบัติเพิ่มเติม เช่น href, src, width, height
+      
+        ตัวอย่าง: &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                &lt;img src="image.jpg" alt="A description of the image"&gt;
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Heading -->
     <h2 id="Heading">Heading</h2>
+    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags...</p>
+    <p><a href="W03-heading.html">workshop</a></p>
     <pre>
-  - &lt;h1&gt;: Heading 1 
-   - &lt;h2&gt;: Heading 2 
-   - &lt;h3&gt;: Heading 3 
-   - &lt;h4&gt;: Heading 4 
-   - &lt;h5&gt;: Heading 5 
-   - &lt;h6&gt;: Heading 6 
+        - &lt;h1&gt;: Heading 1
+        - &lt;h2&gt;: Heading 2
+        - &lt;h3&gt;: Heading 3
+        - &lt;h4&gt;: Heading 4
+        - &lt;h5&gt;: Heading 5
+        - &lt;h6&gt;: Heading 6
     </pre>
 
     <a href="">back to Top</a>
 
     <!-- Paragraph -->
     <h2 id="Paragraph">Paragraph</h2>
+    <p>HTML paragraphs are defined with the &lt;p&gt; tag...</p>
     <pre>
   - &lt;p&gt;: Paragraph
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Text Formatting -->
     <h2 id="TextFormatting">Text Formatting</h2>
+    <p>HTML provides various elements to format text...</p>
     <pre>
     - &lt;h1&gt; to &lt;h6&gt;: Headings 
     - &lt;p&gt;: Paragraph 
@@ -140,40 +171,40 @@ content of web pages
     - &lt;code&gt;: Code snippet 
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Creating Links -->
     <h2 id="CreatingLinks">Creating Links</h2>
+    <p>HTML links are defined with the &lt;a&gt; tag...</p>
     <pre>
-  - &lt;a href="url" target=""&gt;Link text&lt;/a&gt; 
-        - The href attribute specifies the URL of the page the link goes to 
-        - The target attribute specifies where to open the linked document 
-            - _self: Open the linked document in the same window/tab 
-            - _blank: Open the linked document in a new window/tab 
-            - _parent: Open the linked document in the parent frame 
-            - _top: Open the linked document in the full body of the window 
-        - The link text is the visible part of the link 
-        - Anchor links: 
-            - Use the href attribute with the # symbol to link to a specific part of the page 
-            - Use the id attribute to define the section to link to 
-            - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt; 
-            - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt; 
-        - Email links: 
-            - Use the mailto: prefix to create an email link 
-            - Example: &lt;a href="mailto:support@example.com">email us&lt;/a&gt; 
-       
-        - Download links: 
-            - Use the download attribute to create a download link 
-            - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt; 
+        - &lt;a href="url" target=""&gt;Link text&lt;/a&gt;
+        - The href attribute specifies the URL of the page the link goes to
+        - The target attribute specifies where to open the linked document
+            - _self: Open the linked document in the same window/tab
+            - _blank: Open the linked document in a new window/tab
+            - _parent: Open the linked document in the parent frame
+            - _top: Open the linked document in the full body of the window
+        - The link text is the visible part of the link
+        - Anchor links:
+            - Use the href attribute with the # symbol to link to a specific part of the page
+            - Use the id attribute to define the section to link to
+            - Example: &lt;a href="#section"&gt;Go to Section&lt;/a&gt;
+            - Example: &lt;h3 id="section"&gt;This is the Section&lt;/h3&gt;
+        - Email links:
+            - Use the mailto: prefix to create an email link
+            - Example: &lt;a href="mailto:support@example.com">email us&lt;/a&gt;
+      
+        - Download links:
+            - Use the download attribute to create a download link
+            - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Lists (Ordered and Unordered) -->
     <h2 id="Lists">Lists (Ordered and Unordered)</h2>
+    <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
     <pre>
- HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags... 
- 
         - &lt;ul&gt;: Unordered list 
         - &lt;ol&gt;: Ordered list 
         - &lt;li&gt;: List item 
@@ -216,10 +247,11 @@ content of web pages
             - Example: &lt;ol style="list-style-type: lower-roman;"&gt; 
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Adding Images -->
     <h2 id="AddingImages">Adding Images</h2>
+    <p>HTML images are defined with the &lt;img&gt; tag...</p>
     <pre>
         - &lt;img src="url" alt="description"&gt; 
         - The src attribute specifies the URL of the image 
@@ -264,12 +296,13 @@ content of web pages
                 } 
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
     <!-- Creating Tables -->
     <h2 id="CreatingTables">Creating Tables</h2>
+    <p>HTML tables are defined with the &lt;table&gt;, &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; tags...</p>
     <pre>
-       - &lt;table&gt;: Table 
+        - &lt;table&gt;: Table 
         - &lt;tr&gt;: Table row 
         - &lt;th&gt;: Table header 
         - &lt;td&gt;: Table data/cell 
@@ -279,6 +312,7 @@ content of web pages
 
     <!-- HTML Forms -->
     <h2 id="HTMLForms">HTML Forms</h2>
+    <p>HTML forms are defined with the &lt;form&gt; tag...</p>
     <pre>
         หัวข้อเกี่ยวกับฟอร์ม 
      
@@ -329,23 +363,35 @@ content of web pages
            - การใช้ JavaScript (เช่น onsubmit)
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
-    <!-- HTML Document Structure -->
-    <h2 id="Structure">HTML Document Structure</h2>
+    <!-- Semantic HTML -->
+    <h2 id="SemanticHTML">Semantic HTML</h2>
+    <p>Semantic HTML elements clearly define the content of a web page...</p>
     <pre>
-
+    - &lt;header&gt;: Defines a header for a document or section
+    - &lt;nav&gt;: Defines navigation links
+    - &lt;section&gt;: Defines a section in a document
+    - &lt;article&gt;: Defines an article
+    - &lt;aside&gt;: Defines content aside from the page content
+    - &lt;footer&gt;: Defines a footer for a document or section
     </pre>
 
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
 
-    <!-- HTML Document Structure -->
-    <h2 id="Structure">HTML Document Structure</h2>
-    <pre>
+    <!-- My Workshop -->
+    <h2 id="MyWorkshop">My Workshop</h2>
+      <ul>
+        <li><a href="">workshop 01 : ...</a></li>
+        <li><a href="#top">workshop 02 : ...</a></li>
+      </ul>
 
-    </pre>
-
-    <a href="">back to Top</a>
+    <a href="#top">back to Top</a>
+    <hr>
+    <div class="text-center">
+        <a href="https://www.w3schools.com/html/">Learn more about HTML</a>
+        <p >&copy; 2026 HTML Tutorial by Suksawat Saelim</p>
+    </div>
 
 </body>
 </html>

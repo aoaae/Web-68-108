@@ -12,8 +12,8 @@ body {
 }
 
 footer,
-.hero,
-.card,
+/* .hero, */
+/* .card, */
 .tip-box {
     border: 1px solid #ff0000;
     background-color: #fff;
@@ -21,8 +21,12 @@ footer,
     padding: 20px;
 }
 
+
+/* ======================
+Header / Navigation 
+==========================*/
 header {
-    background: linear-gradient(to right, #0036aa, #325bfc);
+    background: linear-gradient(to right, #0036aa, #32bffc);
     padding: 20px;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -53,22 +57,194 @@ nav a:hover {
 }
 
 
+/* ======================
+Hero Section 
+==========================*/
 
+.hero {
+    padding: 45px 70px 25px;
 
-
-.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-
-    background-color: #b5fd76;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
+.hero-icon {
+    /* background-color: #2c48ff; */
+    background: linear-gradient(135deg, #0036aa, #32bffc);
+    padding: 20px;
+    border-radius: 20px;
+
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.hero-text {}
+
+.hero-text h1 {
+    color: #222e77;
+    font-size: 50px;
+}
+
+.hero-text p {
+    color: #606064;
+    font-size: 20px;
+}
+
+
+
+/* ======================
+Main Section 
+==========================*/
+.container {
+    /* max-width: 1200px; */
+    width: 100%;
+    /* margin: 0 auto; */
+    padding: 0 60px;
+
+    /* background-color: #b5fd76; */
+}
 
 .card-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
 
-    background-color: #fffb2c;
+    /* background-color: #fffb2c; */
+
+    gap: 20px;
 }
+
+.card {
+    background-color: #fff;
+    /* padding: 20px; */
+
+    border: 1px solid #b9d5e2;
+    border-radius: 15px;
+
+    overflow: hidden; /* ซ่อนมุม */
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #d6e1f9;
+
+    color: #0d89ed;
+    font-weight: bold;
+    font-size: 20px;
+    
+    padding: 20px;
+}
+
+.card-header-icon {
+    color: #ffffff;
+    background:rgb(19, 116, 213);
+    border-radius: 50%;
+
+    font-size: 20px;
+    /* padding: 10px; */
+
+    width: 38px;
+    height: 38px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple-bg {background-color: #ab32fc;}
+.purple-text {color: #ab32fc;}
+
+.card-body {
+    padding: 20px;
+}
+
+/* card-1 */
+.format-row {
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(215, 213, 213);
+
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 12px;
+}
+
+.label {
+    /* background-color: #ff0000; */
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 8px;
+
+    text-align: center;
+    font-weight: bold;
+}
+
+.b-label {background-color: #32bffc;}
+.strong-label {background-color: #b532fc;}
+.i-label {background-color: #32fc35;}
+.em-label {background-color: #fc8632;}
+.u-label {background-color: #fc3246;}
+.mark-label {background-color: #3257fc;}
+.small-label {background-color: #fc5732;}
+.del-label {background-color: #fc32ab;}
+.sup-label {background-color: #ab32fc;}
+.sub-label {background-color: #32fcb9;}
+
+
+/* Card-2 */
+
+.code-box {
+    background-color: black;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+pre {
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #ffffff;
+}
+
+.line-no { 
+    color: #b9d5e2;
+
+    display: inline-block;
+    width: 30px;
+}
+
+.html-tag { color: #fc5732;}
+
+
+/* Card-3 */
+.activity-list { list-style: none;}
+
+.activity-list li { 
+    margin-bottom: 20px;
+}
+
+.check {
+    /* background-color: #0a6cad; */
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+    /* padding: 10px; */
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+
+}
+
+.check-blue {background-color: blue;}
+.check-pink {background-color: rgb(255, 0, 119);}
+.check-orange {background-color: rgb(255, 149, 0);}
+.check-green {background-color: rgb(3, 154, 76);}
+.check-red {background-color: rgb(255, 0, 0);}
